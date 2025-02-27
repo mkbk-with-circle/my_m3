@@ -1,0 +1,26 @@
+[package]
+name = "sensitivity-analysis"
+version = "0.1.0"
+edition = "2021"
+default-run = "sensitivity-analysis"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = { workspace = true }
+clap = { workspace = true, features = ["derive", "suggestions"] }
+csv = { workspace = true }
+parsimon = { workspace = true }
+ns3-frontend = { workspace = true }
+rand = { workspace = true }
+rayon = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+utils = { version = "0.1.0", path = "../../crates/utils" }
+workload = { version = "0.1.0", path = "../../workload" }
+openssl = { version = "0.10", features = ["vendored"] }
+derivative = "2.2.0"
+typed-builder = "0.18.0"
+thiserror = "1.0.50"
+insta = { version = "1.34.0", features = ["yaml"] }
+rustc-hash = "1.1.0"

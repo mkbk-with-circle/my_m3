@@ -1,0 +1,25 @@
+[package]
+name = "linksim-impls"
+edition = "2021"
+version.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = { workspace = true }
+minim = { git = "https://github.com/netiken/minim.git" }
+ns3-frontend = { path = "../ns3-frontend" }
+parsimon-core = { path = "../parsimon-core" }
+petgraph = { workspace = true }
+rustc-hash = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+thiserror = { workspace = true }
+typed-builder = { workspace = true }
+
+[dev-dependencies]
+anyhow = { workspace = true }
+insta = { workspace = true }
+rand = { workspace = true }
+rand_distr = { workspace = true }
+serde = { workspace = true }
+tempfile = { workspace = true }
