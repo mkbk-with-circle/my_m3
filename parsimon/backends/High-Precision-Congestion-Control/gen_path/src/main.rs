@@ -31,10 +31,10 @@ fn main() -> anyhow::Result<()> {
 
     // setup the configurations
     let params = Parameters {
-        shard: (0..20).collect(),
+        shard: (0..7).collect(),
         n_flows: vec![20000],
         n_hosts: vec![3, 5, 7],
-        shard_cc: (0..2).collect(),
+        shard_cc: (0..3).collect(),
     };
 
     // config for demo purpose
@@ -59,6 +59,7 @@ fn main() -> anyhow::Result<()> {
     let file_ns3 = format!("{}/analysis/fct_to_file.py", root_path);
     let file_reference = format!("{}/analysis/main_flowsim_mmf.py", root_path);
     let type_topo = "topo-pl";
+
 
     // 生成流量
     // println!("{:?}", Parameters::field_names());
@@ -148,6 +149,7 @@ fn main() -> anyhow::Result<()> {
         child = Command::new("sh").arg("-c").arg(cmd).spawn().unwrap();
         _result = child.wait().unwrap();
     });
+
 
     // println!("{:?}", Parameters::field_names());
     itertools::iproduct!(&params.shard, &params.n_flows, &params.n_hosts)

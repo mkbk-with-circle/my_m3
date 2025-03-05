@@ -123,6 +123,9 @@ class PathDataModule(LightningDataModule):
         flowsim_mean = 0
         flowsim_M2 = 0
 
+        flowsim_overall_variance = 0
+        overall_variance = 0
+
         count = 0
         mean = 0
         M2 = 0
@@ -453,6 +456,8 @@ class PathDataset_Context(Dataset):
 
             # 进一步处理这些数据，生成仿真所需的特征图
             # 这里计算的是延迟和传输速率相关的数据
+            # file.write("0 {} {} {} {} {} {} {} {} {} {} {}\n".format
+            # (bfsz, fwin, enable_pfc, cc, dctcp_k, dcqcn_k_min, dcqcn_k_max, u_tgt, hpai, timely_t_low, timely_t_high))
             param_data = np.load(f"{dir_input_tmp}/param{topo_type}.npy")
             if param_data[3]==1.0:
                 param_data=np.insert(param_data,4,0)

@@ -103,6 +103,10 @@ struct {
 
 
 ### 命令
+cd parsimon/backends/High-Precision-Congestion-Control/simulation
+CC='gcc-5' CXX='g++-5' CXXFLAGS='-std=c++11' ./waf configure --build-profile=optimized
+
+cd parsimon/backends/High-Precision-Congestion-Control/gen_path
 cargo run --release -- --python-path /users/ymy_yuan/anaconda3/envs/m3/bin/python --output-dir /users/ymy_yuan/m3/data
 
 
@@ -133,7 +137,7 @@ run
 
 
 
-python main_train.py --train_config=/users/ymy_yuan/m3/config/train_config_path_demo.yaml --mode=train --dir_input=/users/ymy_yuan/m3/data --dir_output=/users/ymy_yuan/m3/ckpts
+python main_train.py --train_config=/users/ymy_yuan/m3/config/train_config_path.yaml --mode=train --dir_input=/users/ymy_yuan/m3/data --dir_output=/users/ymy_yuan/m3/ckpts
 
 
 python main_train.py --train_config=/users/ymy_yuan/m3/config/train_config_path_demo.yaml --mode=train --dir_input=/users/ymy_yuan/m3/data --dir_output=/users/ymy_yuan/true_m3/ckpts

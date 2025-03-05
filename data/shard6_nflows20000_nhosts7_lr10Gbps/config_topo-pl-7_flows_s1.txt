@@ -4,31 +4,31 @@ USE_DYNAMIC_PFC_THRESHOLD 1
 
 PACKET_PAYLOAD_SIZE 1000
 
-TOPOLOGY_FILE /users/ymy_yuan/my_m3/parsimon/backends/High-Precision-Congestion-Control/simulation/mix_m3/topo-pl-7.txt
-FLOW_FILE /users/ymy_yuan/my_m3/data/shard6_nflows20000_nhosts7_lr10Gbps/flows.txt
-FLOW_ON_PATH_FILE /users/ymy_yuan/my_m3/data/shard6_nflows20000_nhosts7_lr10Gbps/flows_on_path.txt
-FLOW_PATH_MAP_FILE /users/ymy_yuan/my_m3/data/shard6_nflows20000_nhosts7_lr10Gbps/flows_path_map.txt
-TRACE_FILE /users/ymy_yuan/my_m3/parsimon/backends/High-Precision-Congestion-Control/simulation/mix_m3/trace-pl-7.txt
-TRACE_OUTPUT_FILE /users/ymy_yuan/my_m3/data/shard6_nflows20000_nhosts7_lr10Gbps/mix_topo-pl-7_s1.tr
-FCT_OUTPUT_FILE /users/ymy_yuan/my_m3/data/shard6_nflows20000_nhosts7_lr10Gbps/fct_topo-pl-7_s1.txt
-PFC_OUTPUT_FILE /users/ymy_yuan/my_m3/data/shard6_nflows20000_nhosts7_lr10Gbps/pfc_topo-pl-7_s1.txt
+TOPOLOGY_FILE /users/ymy_yuan/m3/parsimon/backends/High-Precision-Congestion-Control/simulation/mix_m3/topo-pl-7.txt
+FLOW_FILE /users/ymy_yuan/m3/data/shard6_nflows20000_nhosts7_lr10Gbps/flows.txt
+FLOW_ON_PATH_FILE /users/ymy_yuan/m3/data/shard6_nflows20000_nhosts7_lr10Gbps/flows_on_path.txt
+FLOW_PATH_MAP_FILE /users/ymy_yuan/m3/data/shard6_nflows20000_nhosts7_lr10Gbps/flows_path_map.txt
+TRACE_FILE /users/ymy_yuan/m3/parsimon/backends/High-Precision-Congestion-Control/simulation/mix_m3/trace-pl-7.txt
+TRACE_OUTPUT_FILE /users/ymy_yuan/m3/data/shard6_nflows20000_nhosts7_lr10Gbps/mix_topo-pl-7_s1.tr
+FCT_OUTPUT_FILE /users/ymy_yuan/m3/data/shard6_nflows20000_nhosts7_lr10Gbps/fct_topo-pl-7_s1.txt
+PFC_OUTPUT_FILE /users/ymy_yuan/m3/data/shard6_nflows20000_nhosts7_lr10Gbps/pfc_topo-pl-7_s1.txt
 
 SIMULATOR_STOP_TIME 19
 
-CC_MODE 3
+CC_MODE 7
 ALPHA_RESUME_INTERVAL 1
 RATE_DECREASE_INTERVAL 4
 CLAMP_TARGET_RATE 0
 RP_TIMER 300
 EWMA_GAIN 0.00390625
 FAST_RECOVERY_TIMES 1
-RATE_AI 986Mb/s
-RATE_HAI 986Mb/s
+RATE_AI 10.0Mb/s
+RATE_HAI 50.0Mb/s
 MIN_RATE 1000Mb/s
 MAX_RATE 10000Mb/s
 DCTCP_RATE_AI 1000Mb/s
-TIMELY_T_HIGH 50000
-TIMELY_T_LOW 10000
+TIMELY_T_HIGH 116572
+TIMELY_T_LOW 42762
 TIMELY_BETA 0.8
 
 ERROR_RATE_PER_LINK 0.0000
@@ -39,8 +39,8 @@ L2_BACK_TO_ZERO 0
 HAS_WIN 1
 GLOBAL_T 1
 VAR_WIN 1
-FAST_REACT 1
-U_TARGET 0.94143729951075
+FAST_REACT 0
+U_TARGET 0.95
 MI_THRESH 0
 INT_MULTI 1
 MULTI_RATE 0
@@ -50,7 +50,7 @@ PINT_PROB 1.0
 
 RATE_BOUND 1
 
-ACK_HIGH_PRIO 0
+ACK_HIGH_PRIO 1
 
 LINK_DOWN 0 0 0
 
@@ -59,10 +59,10 @@ ENABLE_TRACE 0
 KMAX_MAP 2 10000000000 16 40000000000 64
 KMIN_MAP 2 10000000000 4 40000000000 16
 PMAX_MAP 2 10000000000 0.20 40000000000 0.20
-BUFFER_SIZE 433
-QLEN_MON_FILE /users/ymy_yuan/my_m3/data/shard6_nflows20000_nhosts7_lr10Gbps/qlen_topo-pl-7_s1.txt
+BUFFER_SIZE 229
+QLEN_MON_FILE /users/ymy_yuan/m3/data/shard6_nflows20000_nhosts7_lr10Gbps/qlen_topo-pl-7_s1.txt
 QLEN_MON_START 1000000000
 QLEN_MON_END 3000000000
 
-FIXED_WIN 10938
+FIXED_WIN 24031
 BASE_RTT 14400

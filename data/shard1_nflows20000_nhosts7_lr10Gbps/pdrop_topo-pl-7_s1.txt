@@ -1,15 +1,15 @@
 ENABLE_QCN			Yes
-ENABLE_PFC			No
+ENABLE_PFC			Yes
 USE_DYNAMIC_PFC_THRESHOLD	Yes
 PACKET_PAYLOAD_SIZE		1000
-TOPOLOGY_FILE			/users/ymy_yuan/my_m3/parsimon/backends/High-Precision-Congestion-Control/simulation/mix_m3/topo-pl-7.txt
-FLOW_FILE			/users/ymy_yuan/my_m3/data/shard1_nflows20000_nhosts7_lr10Gbps/flows.txt
-FLOW_ON_PATH_FILE			/users/ymy_yuan/my_m3/data/shard1_nflows20000_nhosts7_lr10Gbps/flows_on_path.txt
-FLOW_PATH_MAP_FILE			/users/ymy_yuan/my_m3/data/shard1_nflows20000_nhosts7_lr10Gbps/flows_path_map.txt
-TRACE_FILE			/users/ymy_yuan/my_m3/parsimon/backends/High-Precision-Congestion-Control/simulation/mix_m3/trace-pl-7.txt
-TRACE_OUTPUT_FILE		/users/ymy_yuan/my_m3/data/shard1_nflows20000_nhosts7_lr10Gbps/mix_topo-pl-7_s1.tr
-FCT_OUTPUT_FILE		/users/ymy_yuan/my_m3/data/shard1_nflows20000_nhosts7_lr10Gbps/fct_topo-pl-7_s1.txt
-PFC_OUTPUT_FILE				/users/ymy_yuan/my_m3/data/shard1_nflows20000_nhosts7_lr10Gbps/pfc_topo-pl-7_s1.txt
+TOPOLOGY_FILE			/users/ymy_yuan/m3/parsimon/backends/High-Precision-Congestion-Control/simulation/mix_m3/topo-pl-7.txt
+FLOW_FILE			/users/ymy_yuan/m3/data/shard1_nflows20000_nhosts7_lr10Gbps/flows.txt
+FLOW_ON_PATH_FILE			/users/ymy_yuan/m3/data/shard1_nflows20000_nhosts7_lr10Gbps/flows_on_path.txt
+FLOW_PATH_MAP_FILE			/users/ymy_yuan/m3/data/shard1_nflows20000_nhosts7_lr10Gbps/flows_path_map.txt
+TRACE_FILE			/users/ymy_yuan/m3/parsimon/backends/High-Precision-Congestion-Control/simulation/mix_m3/trace-pl-7.txt
+TRACE_OUTPUT_FILE		/users/ymy_yuan/m3/data/shard1_nflows20000_nhosts7_lr10Gbps/mix_topo-pl-7_s1.tr
+FCT_OUTPUT_FILE		/users/ymy_yuan/m3/data/shard1_nflows20000_nhosts7_lr10Gbps/fct_topo-pl-7_s1.txt
+PFC_OUTPUT_FILE				/users/ymy_yuan/m3/data/shard1_nflows20000_nhosts7_lr10Gbps/pfc_topo-pl-7_s1.txt
 SIMULATOR_STOP_TIME		7
 CC_MODE		8
 ALPHA_RESUME_INTERVAL		1
@@ -45,16 +45,16 @@ RATE_BOUND		1
 ACK_HIGH_PRIO		1
 LINK_DOWN				0 0 0
 ENABLE_TRACE				0
-KMAX_MAP				 10000000000 12 40000000000 48
-KMIN_MAP				 10000000000 12 40000000000 48
+KMAX_MAP				 10000000000 15 40000000000 60
+KMIN_MAP				 10000000000 15 40000000000 60
 PMAX_MAP				 10000000000 1 40000000000 1
-BUFFER_SIZE				365
-QLEN_MON_FILE				/users/ymy_yuan/my_m3/data/shard1_nflows20000_nhosts7_lr10Gbps/qlen_topo-pl-7_s1.txt
+BUFFER_SIZE				490
+QLEN_MON_FILE				/users/ymy_yuan/m3/data/shard1_nflows20000_nhosts7_lr10Gbps/qlen_topo-pl-7_s1.txt
 QLEN_MON_START				1000000000
 QLEN_MON_END				3000000000
-FIXED_WIN				22703
+FIXED_WIN				18680
 BASE_RTT				14400
-fwin: 22703, bfsz: 365, enable_pfc: 0, cc_mode: 8, rate2kmin: 12, rate2kmax: 12, timely_t_low: 10000, timely_t_high: 50000,rate2kmin: 12, rate2kmax: 12, u_target: 0.950000, ai: 10Mb/s, enable_qcn: 1
+fwin: 18680, bfsz: 490, enable_pfc: 1, cc_mode: 8, rate2kmin: 15, rate2kmax: 15, timely_t_low: 10000, timely_t_high: 50000,rate2kmin: 15, rate2kmax: 15, u_target: 0.950000, ai: 10Mb/s, enable_qcn: 1
 maxRtt=12000 maxBdp=15000
 Running Simulation.
 t = 1000 ms
@@ -63,4 +63,4 @@ t = 3000 ms
 t = 4000 ms
 t = 5000 ms
 t = 6000 ms
-1278.24
+1244.72

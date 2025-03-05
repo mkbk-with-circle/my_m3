@@ -3,13 +3,13 @@
 # Dataset parameters
 dataset:
   shard: 0 # random seed for running scripts
-  shard_list: [0,20,20] # number of diverse workloads. It is consistent with the number of diverse workloads in the dataset in parsimon/backends/High-Precision-Congestion-Control/gen_path/src/main.rs
+  shard_list: [0,7,7] # number of diverse workloads. It is consistent with the number of diverse workloads in the dataset in parsimon/backends/High-Precision-Congestion-Control/gen_path/src/main.rs
   n_flows_list: [20000] # number of flows per (src,dst) host pair. It is consistent with the number of flows in the dataset in parsimon/backends/High-Precision-Congestion-Control/gen_path/src/main.rs
   n_hosts_list: [3,5,7] # type of multi-hop paths, e.g., 2-hop, 4-hop, 6-hop. It is consistent with the type of multi-hop paths in the dataset in parsimon/backends/High-Precision-Congestion-Control/gen_path/src/main.rs
-  sample_list: [0,2,2] # number of diverse network configurations. It is consistent with the number of diverse network configurations in the dataset in parsimon/backends/High-Precision-Congestion-Control/gen_path/src/main.rs
+  sample_list: [0,3,3] # number of diverse network configurations. It is consistent with the number of diverse network configurations in the dataset in parsimon/backends/High-Precision-Congestion-Control/gen_path/src/main.rs
   lr: 10 # link rate in Gbps
   bucket_thold: 1 # bucket threshold used to filter out the flows size bucket with less than the threshold
-  train_frac: 0.9 # fraction of the dataset used for training
+  train_frac: 0.8 # fraction of the dataset used for training
   enable_context: True # enable context information for the feature map used in m3
   topo_type: "_topo-pl-x_" # topology type used in the dataset. No need to change
   n_params: 19 # number of parameters used to encode the network configurations. These parameters will be appended to the feature map used in m3
@@ -37,7 +37,7 @@ training:
   learning_rate: 0.0001 # learning rate
   betas: [0.9, 0.95] # betas
   weight_decay: 0.02 # weight decay
-  num_workers: 10 # number of workers
+  num_workers: 6 # number of workers
   enable_val: True # enable validation
   enable_dist: True # enable distributed training
   enable_masked_loss: True # enable masked loss

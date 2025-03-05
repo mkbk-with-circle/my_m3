@@ -2,14 +2,14 @@ ENABLE_QCN			Yes
 ENABLE_PFC			Yes
 USE_DYNAMIC_PFC_THRESHOLD	Yes
 PACKET_PAYLOAD_SIZE		1000
-TOPOLOGY_FILE			/users/ymy_yuan/my_m3/parsimon/backends/High-Precision-Congestion-Control/simulation/mix_m3/topo-pl-5.txt
-FLOW_FILE			/users/ymy_yuan/my_m3/data/shard0_nflows20000_nhosts5_lr10Gbps/flows.txt
-FLOW_ON_PATH_FILE			/users/ymy_yuan/my_m3/data/shard0_nflows20000_nhosts5_lr10Gbps/flows_on_path.txt
-FLOW_PATH_MAP_FILE			/users/ymy_yuan/my_m3/data/shard0_nflows20000_nhosts5_lr10Gbps/flows_path_map.txt
-TRACE_FILE			/users/ymy_yuan/my_m3/parsimon/backends/High-Precision-Congestion-Control/simulation/mix_m3/trace-pl-5.txt
-TRACE_OUTPUT_FILE		/users/ymy_yuan/my_m3/data/shard0_nflows20000_nhosts5_lr10Gbps/mix_topo-pl-5_s0.tr
-FCT_OUTPUT_FILE		/users/ymy_yuan/my_m3/data/shard0_nflows20000_nhosts5_lr10Gbps/fct_topo-pl-5_s0.txt
-PFC_OUTPUT_FILE				/users/ymy_yuan/my_m3/data/shard0_nflows20000_nhosts5_lr10Gbps/pfc_topo-pl-5_s0.txt
+TOPOLOGY_FILE			/users/ymy_yuan/m3/parsimon/backends/High-Precision-Congestion-Control/simulation/mix_m3/topo-pl-5.txt
+FLOW_FILE			/users/ymy_yuan/m3/data/shard0_nflows20000_nhosts5_lr10Gbps/flows.txt
+FLOW_ON_PATH_FILE			/users/ymy_yuan/m3/data/shard0_nflows20000_nhosts5_lr10Gbps/flows_on_path.txt
+FLOW_PATH_MAP_FILE			/users/ymy_yuan/m3/data/shard0_nflows20000_nhosts5_lr10Gbps/flows_path_map.txt
+TRACE_FILE			/users/ymy_yuan/m3/parsimon/backends/High-Precision-Congestion-Control/simulation/mix_m3/trace-pl-5.txt
+TRACE_OUTPUT_FILE		/users/ymy_yuan/m3/data/shard0_nflows20000_nhosts5_lr10Gbps/mix_topo-pl-5_s0.tr
+FCT_OUTPUT_FILE		/users/ymy_yuan/m3/data/shard0_nflows20000_nhosts5_lr10Gbps/fct_topo-pl-5_s0.txt
+PFC_OUTPUT_FILE				/users/ymy_yuan/m3/data/shard0_nflows20000_nhosts5_lr10Gbps/pfc_topo-pl-5_s0.txt
 SIMULATOR_STOP_TIME		7
 CC_MODE		7
 ALPHA_RESUME_INTERVAL		1
@@ -49,7 +49,7 @@ KMAX_MAP				 10000000000 16 40000000000 64
 KMIN_MAP				 10000000000 4 40000000000 16
 PMAX_MAP				 10000000000 0.2 40000000000 0.2
 BUFFER_SIZE				364
-QLEN_MON_FILE				/users/ymy_yuan/my_m3/data/shard0_nflows20000_nhosts5_lr10Gbps/qlen_topo-pl-5_s0.txt
+QLEN_MON_FILE				/users/ymy_yuan/m3/data/shard0_nflows20000_nhosts5_lr10Gbps/qlen_topo-pl-5_s0.txt
 QLEN_MON_START				1000000000
 QLEN_MON_END				3000000000
 FIXED_WIN				22879
@@ -63,4 +63,4 @@ t = 3000 ms
 t = 4000 ms
 t = 5000 ms
 t = 6000 ms
-969.422
+963.333
